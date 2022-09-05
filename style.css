@@ -1,0 +1,64 @@
+:root {
+  --color1: #ede4d0;
+  --color2: rgb(241, 189, 198);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./nepal.jpg) center/cover;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.intro {
+  background: rgba(0, 0, 0, 0.507);
+  width: calc(100% - 50%);
+  padding: 20px /*en haut*/ 20px /*gauche-droite*/ 6px /*en bas*/;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.521);
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+}
+.intro:before {
+  content: "Bienvenue dans l'univers artistique";
+}
+
+h1 {
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--color1);
+}
+
+.oeuvres {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 30px;
+  perspective: 30px;
+}
+input[type="button"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  border: 1px solid var(--color1);
+  background-color: rgba(8, 104, 104, 0.692);
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+  user-select: none;
+  color: aquamarine;
+}
+
+p {
+  text-align: center;
+  color: var(--color1);
+}
